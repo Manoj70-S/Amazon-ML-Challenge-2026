@@ -1,0 +1,50 @@
+{
+  "threshold": 0.7250000000000003,
+  "best_val_f05": 0.6980543047983311,
+  "feature_columns": [
+    "tfidf_sim",
+    "name_levenshtein",
+    "name_token_sort",
+    "name_token_set",
+    "name_jaro_winkler",
+    "name_partial",
+    "name_jaccard",
+    "name_bigram_jacc",
+    "name_len_diff",
+    "name_len_ratio",
+    "name_exact",
+    "name_tok_count_diff",
+    "addr_levenshtein",
+    "addr_token_sort",
+    "addr_token_set",
+    "addr_partial",
+    "addr_jaccard",
+    "addr_num_overlap",
+    "addr_has_common_num",
+    "comp_sort",
+    "comp_set",
+    "addr_len_ratio",
+    "cand_rank",
+    "delta_top_tfidf",
+    "max_tfidf_in_block",
+    "is_top1",
+    "is_s2",
+    "both_addr_empty"
+  ],
+  "blocker_params": {
+    "analyzer": "word",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_sim": 0.05,
+    "top_k": 50,
+    "max_features": 200000,
+    "min_df": 3,
+    "max_df": 0.5,
+    "progress_every": 5000
+  },
+  "lgb_n_estimators_best": 2000,
+  "n_train_pairs": 6000000,
+  "n_positives": 354332
+}

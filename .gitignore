@@ -1,0 +1,35 @@
+# Python environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python byte-code and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Raw competition datasets (>100MB, cannot be committed to Git)
+dataset/
+*.tsv.gz
+
+# Intermediate cache and candidate matrices
+cache/
+output/candidate_pairs.tsv
+output/candidate_pairs*
+output/*checkpoint*.tsv
+output/*raw*.tsv
+
+# System junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+__MACOSX/
+
+# Submission archives
+*.zip
+*.tar.gz
+
+# Logs
+*.log
